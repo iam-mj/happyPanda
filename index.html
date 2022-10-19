@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+<body style="background-color:#E6F3E3;">
+
+<style>
+   .panda {
+      position: relative;
+	  margin: auto;
+	  display: block;
+	  margin-top: 5%;
+	  width: 300px;
+	  height: 300px;
+   }
+   
+   .panda-head {
+      top: 10%;
+	  left: 25%;
+      background: white; 
+	  border-radius: 70% 70% 60% 60%;
+	  width: 50%;
+	  height: 45%;
+   }
+   
+   .left-ear {
+      top: 5%;
+	  left: 25%;
+      background: gray;
+	  width: 15%;
+	  height: 15%;
+	  border-radius: 70% 60% 70% 60%;
+   }
+   
+    .right-ear {
+      top: 5%;
+	  right: 25%;
+      background: gray;
+	  width: 15%;
+	  height: 15%;
+	  border-radius: 70% 60% 70% 60%;
+   }
+   
+   .left-eye {
+      top: 40%;
+	  left: 23%;
+      background: black;
+	  width: 20%;
+	  height: 20%;
+	  border-radius: 50%;
+   }
+   
+   .sparkle {
+      background: white;
+	  border-radius: 50%;
+	  width: 30%;
+	  height: 30%;
+	  top: 10%;
+	  left: 10%;
+   }
+   
+   .left-eye-shadow {
+      background: gray;
+	  border-radius: 90% 30% 90% 30%;
+	  width: 30%;
+	  height: 35%;
+	  top: 30%;
+	  left: 17%;
+	  transform: rotate(180deg);
+   }
+   
+   .right-eye {
+      top: 40%;
+	  right: 23%;
+      background: black;
+	  width: 20%;
+	  height: 20%;
+	  border-radius: 50%;
+   }
+   
+   .right-eye-shadow {
+      background: gray;
+	  border-radius: 30% 90% 30% 90%;
+	  width: 30%;
+	  height: 35%;
+	  top: 30%;
+	  right: 17%;
+	  trasform: rotate(180deg);
+   }
+   
+   .clo {
+     background: gray;
+	 border-radius: 50%;
+	 width: 100%;
+	 height: 60%;
+	 bottom: 0%;
+   }
+   
+    <!--.left-eye-margin{
+      top: 40%;
+	  left: 23%;
+      background: white;
+	  border-radius: 50%;
+	  width: 21%;
+	  height: 21%;
+   }
+   
+   .right-eye-margin{
+      top: 40%;
+	  right: 23%;
+      background: white;
+	  border-radius: 50%;
+	  width: 21%;
+	  height: 21%;
+   }-->
+   
+   .nose { 
+	  width: 0%;
+	  height: 0%;
+	  top: 65%;
+	  left: 41%;
+	  border-top: 15px solid gray;
+	  border-right: 15px solid transparent;
+	  border-bottom: 15px solid transparent;
+	  border-left: 15px solid transparent;
+	  border-radius: 50%;
+   }
+   
+   .panda-bottom {
+      background: gray;
+	  width: 53%;
+	  height: 50%;
+	  top: 40%;
+      left: 23.5%;
+	  border-radius: 70% 70% 100% 100%;
+   }
+   
+   .belly {
+     background: white;
+	 width: 100%;
+	 height: 55%;
+	 top: 30%;
+	 border-radius: 100% 100% 100% 100%;
+   }
+   
+   .left-arm {
+     background: gray;
+	 left:25%;
+	 width: 30%;
+	 height: 60%;
+	 border-radius: 30% 30% 120% 30%;
+	 transform: rotate(45deg);
+	 z-index: -1;
+	 animation-duration: 3s;
+    animation-name: wave;
+    animation-iteration-count: infinite;
+    transform-origin:0% 0%;
+    animation-timing-function: linear;
+   }
+   
+    @keyframes wave {
+	  10% {
+        transform: rotate(110deg);
+      }
+	  20% {
+        transform: rotate(130deg);
+      }
+      30% {
+        transform: rotate(110deg);
+      } 
+      40% {
+        transform: rotate(130deg);
+      }  
+    }
+   
+   .right-arm {
+      background: gray;
+	  top: 26%;
+	 left: 70%;
+	 width: 30%;
+	 height: 60%;
+	 border-radius: 30% 30% 30% 120%;
+	 transform: rotate(-45deg);
+	 z-index: -1;
+	 <!--animation-duration: 3s;
+    animation-name: WAVE;
+    animation-iteration-count: infinite;
+    transform-origin:0% 0%;
+    animation-timing-function: linear;-->
+   }
+   
+   <!--@keyframes WAVE {
+	
+	  10% {
+        transform: rotate(-110deg);
+      }
+	  20% {
+        transform: rotate(-130deg);
+      }
+      30% {
+        transform: rotate(-110deg);
+      } 
+      40% {
+        transform: rotate(-130deg);
+      }  
+    }-->
+   
+   .left-feet {
+     background: gray;
+	 top: 75%;
+     left: 15%;
+	 width: 22%;
+     height: 44%;
+     border-radius: 50% 50% 50% 50%;
+     transform: rotate(80deg);
+     z-index: -2222;    
+   } 
+   
+   .right-feet {
+     background: gray;
+	 top: 75%;
+     right: 15%;
+	 width: 22%;
+     height: 44%;
+     border-radius: 50% 50% 50% 50%;
+     transform: rotate(-80deg);
+     z-index: -2222;    
+   } 
+   
+   .panda * {
+      position: absolute;
+   }
+   
+</style>
+
+<div class="panda">
+  <div class="panda-bottom">
+    <div class="belly"></div>
+    <div class="left-arm"></div>
+	<div class="right-arm"></div>
+	<div class="left-feet"></div>
+	<div class="right-feet"></div>
+  </div>
+     <div class="right-ear"></div>
+     <div class="left-ear"></div>
+  <div class="panda-head">
+    <div class="left-eye-shadow"></div>
+	<div class="right-eye-shadow"></div>
+	<!--<div class="left-eye-margin"></div>
+	<div class="right-eye-margin"></div>-->
+    <div class="left-eye">
+	  <!--<div class="sparkle"></div>-->
+	  <div class="clo"></div>
+	</div>
+    <div class="right-eye">
+	  <!--<div class="sparkle"></div>-->
+	  	  <div class="clo"></div>
+	</div>
+	<div class="nose"></div>
+  </div>
+    
+</div>
+
+</body>
+</html>
